@@ -13,6 +13,7 @@ const DisplayError = () => {
       })
       .catch((err) => console.log(err));
   };
+  //! use for displaying the error
   return (
     <div>
       <p className="text-red-500">Something went wrong</p>
