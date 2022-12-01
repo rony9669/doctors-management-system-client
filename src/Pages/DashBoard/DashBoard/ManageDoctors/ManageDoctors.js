@@ -55,6 +55,8 @@ const ManageDoctors = () => {
   if (isLoading) {
     return <Loading></Loading>;
   }
+
+  //! manage doctors info
   return (
     <div>
       <h2 className="text-3xl">Manage Doctors: {doctors?.length}</h2>
