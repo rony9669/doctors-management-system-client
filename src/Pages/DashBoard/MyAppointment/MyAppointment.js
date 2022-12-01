@@ -7,7 +7,7 @@ const MyAppointment = () => {
   const { user } = useContext(AuthContext);
   const url = `https://doctors-portal-server-alpha-five.vercel.app/bookings?email=${user?.email}`;
   const { data: bookings = [] } = useQuery({
-    //! 75-2 er 10 min
+    //! 75-2 er 10 min. user can see her/his appointment
     queryKey: ["bookings", user?.email], //!kar upor depend korbe seta akahne
     queryFn: async () => {
       const res = await fetch(url, {
