@@ -20,7 +20,7 @@ const AppointmentOption = ({ appointment, setTreatment }) => {
             className="btn btn-primary text-white"
             onClick={() => setTreatment(appointment)}
           >
-            Book
+            Book Appointment
           </label>
         </div>
       </div>
